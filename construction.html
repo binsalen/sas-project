@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Construction - The Evolving Self</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Font Setup: Inter for body (Sans) and a placeholder serif for headlines */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        .font-sans {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-serif-expressive {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Custom color palette defined for Tailwind */
+        :root {
+            --color-primary-dark: #1E293B;
+            /* Slate-900: Deep Navy/Charcoal */
+            --color-accent-teal: #14B8A6;
+            /* Teal-500: Vibrant Teal for Highlights */
+            --color-bg-light: #F8FAFC;
+            /* Slate-50: Off-White */
+            --color-secondary-grey: #64748B;
+            /* Slate-500 */
+        }
+
+        .bg-primary-dark {
+            background-color: var(--color-primary-dark);
+        }
+
+        .text-accent-teal {
+            color: var(--color-accent-teal);
+        }
+
+        .border-accent-teal {
+            border-color: var(--color-accent-teal);
+        }
+
+        .bg-bg-light {
+            background-color: var(--color-bg-light);
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1E293B',
+                        'accent-teal': '#14B8A6',
+                        'bg-light': '#F8FAFC',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-bg-light font-sans text-primary-dark antialiased">
+
+    <!-- Global Sticky Navigation Bar (Dark, Professional) -->
+    <nav class="sticky top-0 z-50 bg-primary-dark shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo/Title -->
+                <div class="flex-shrink-0">
+                    <a href="index.html"
+                        class="text-2xl font-bold text-white font-serif-expressive tracking-wider hover:text-accent-teal transition duration-200">The
+                        Evolving Self</a>
+                </div>
+                <!-- Nav Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-accent-teal px-3 py-2 rounded-lg text-sm font-medium transition duration-200">Home</a>
+                        <a href="construction.html"
+                            class="text-white bg-accent-teal/20 hover:bg-accent-teal/40 px-3 py-2 rounded-lg text-sm font-semibold transition duration-200 border border-accent-teal">My
+                            Construction</a>
+                        <a href="mirror.html"
+                            class="text-gray-300 hover:text-accent-teal px-3 py-2 rounded-lg text-sm font-medium transition duration-200">The
+                            Mirror</a>
+                        <a href="declarations.html"
+                            class="text-gray-300 hover:text-accent-teal px-3 py-2 rounded-lg text-sm font-medium transition duration-200">My
+                            Declarations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- PAGE 1: The Construction (Part 1 - Narrative & Insights) -->
+        <section class="py-12">
+            <h1 class="text-4xl font-serif-expressive font-bold text-primary-dark mb-4">
+                1. My Construction: Building the Self
+            </h1>
+            <p class="text-xl text-gray-600 mb-10">
+                Defining the "I" as a fluid, ongoing collection of stories, influences, and internal logic.
+            </p>
+
+            <!-- Highlighted Self-Definition -->
+            <blockquote class="p-8 my-8 border-l-4 border-accent-teal bg-white rounded-xl shadow-lg">
+                <p class="text-2xl font-serif-expressive italic text-gray-800">
+                    "The Self is not a destination, but the continuous act of choosing what stories to believe and what
+                    boundaries to maintain. It is a work of both analysis and courage."
+                </p>
+                <footer class="mt-4 text-right text-base text-accent-teal font-medium">-- My Working Definition</footer>
+            </blockquote>
+
+            <!-- Narrative Reflection -->
+            <h2 class="text-3xl font-serif-expressive font-semibold mt-12 mb-4 text-primary-dark">The Discovery of 'Me'
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                My first memory of understanding myself as separate from the world was realizing that my internal
+                thoughts were much louder and more vibrant than what I allowed to escape. I was quickly labeled
+                "reserved," which became a safe, external definition I happily wore. The real me—analytical, deeply
+                curious, and bursting with ideas—remained behind a curtain.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                As I've grown, this curtain has thinned. Now, my life is defined by constant exploration, whether
+                through competitive sports, challenging music pieces, or new fields of study. This ongoing change feels
+                less like instability and more like a restless testing of my own boundaries. I am not yet a stable
+                finished product; I am intentionally, actively in the middle of figuring things out.
+            </p>
+
+            <!-- Module Application (Interactive Card Grid) -->
+            <h2 class="text-3xl font-serif-expressive font-semibold mt-12 mb-4 text-primary-dark">The 8 Drivers of My
+                Self-System</h2>
+            <p class="text-lg text-gray-600 mb-10 max-w-3xl">
+                These are the core forces shaping who I am—each a lens through which I understand myself, each a thread
+                in the tapestry of my evolving identity.
+            </p>
+
+            <!-- Interactive Card Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+
+                <!-- Card 1: The Public Self vs. The Private Self -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-500 via-pink-500 to-red-500 opacity-90">
+                    </div>
+                    <div class="relative p-8 text-white">
+                        <div class="flex items-center mb-4">
+                            <span class="text-5xl mr-4 filter drop-shadow-lg" role="img"
+                                aria-label="Theater Masks">🎭</span>
+                            <div>
+                                <h3 class="text-2xl font-bold font-serif-expressive">The Dual Identity</h3>
+                                <p class="text-sm opacity-90 mt-1">Public Self vs. Private Self</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-20 bg-white/40 rounded mb-4"></div>
+                        <p class="text-base leading-relaxed opacity-95">
+                            The most significant internal gap I manage is the difference between my active, inquisitive
+                            true self and the quiet, accommodating person I present in new social settings. I often
+                            check myself to see if my behavior is "acceptable" before speaking, which means the person
+                            others interact with is usually the safer, less revealing version of me. This energy I spend
+                            monitoring my presentation is exhausting, and closing this gap is my biggest hurdle.
+                        </p>
+                        <div class="mt-6 flex items-center text-sm font-semibold">
+                            <span class="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Identity</span>
+                            <span class="ml-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Social Masks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: My Core Operating System (Traits) -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600 via-cyan-500 to-teal-400 opacity-90">
+                    </div>
+                    <div class="relative p-8 text-white">
+                        <div class="flex items-center mb-4">
+                            <span class="text-5xl mr-4 filter drop-shadow-lg" role="img" aria-label="Gear">⚙️</span>
+                            <div>
+                                <h3 class="text-2xl font-bold font-serif-expressive">The Inner Engine</h3>
+                                <p class="text-sm opacity-90 mt-1">Core Operating System</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-20 bg-white/40 rounded mb-4"></div>
+                        <p class="text-base leading-relaxed opacity-95">
+                            I am someone who needs a plan; I analyze tasks, create detailed schedules, and feel restless
+                            if I'm not being productive. This drive is positive, but it comes with a cost: I worry. I
+                            worry about outcomes, future problems, and potential failures far more than is productive.
+                            My current challenge is to harness my inner drive without allowing my tendency to overthink
+                            to paralyze me or steal my peace.
+                        </p>
+                        <div class="mt-6 flex items-center text-sm font-semibold">
+                            <span class="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Analytical</span>
+                            <span class="ml-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Driven</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: The Many Selves I Am Becoming (Identity) -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-amber-500 via-orange-500 to-red-500 opacity-90">
+                    </div>
+                    <div class="relative p-8 text-white">
+                        <div class="flex items-center mb-4">
+                            <span class="text-5xl mr-4 filter drop-shadow-lg" role="img"
+                                aria-label="Puzzle Piece">🧩</span>
+                            <div>
+                                <h3 class="text-2xl font-bold font-serif-expressive">The Multifaceted Self</h3>
+                                <p class="text-sm opacity-90 mt-1">Identity in Formation</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-20 bg-white/40 rounded mb-4"></div>
+                        <p class="text-base leading-relaxed opacity-95">
+                            I am simultaneously a musician, an athlete, a focused student, and a child of a pastor.
+                            It feels like I'm trying on four different hats that don't always match. I'm currently in a
+                            phase of active searching, testing out which values and roles truly belong to *me* versus
+                            those inherited or assigned. The ultimate goal is to braid these separate strands into a
+                            single, strong identity that feels authentic and integrated.
+                        </p>
+                        <div class="mt-6 flex items-center text-sm font-semibold">
+                            <span class="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Musician</span>
+                            <span class="ml-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Athlete</span>
+                            <span class="ml-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">PK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Where I Draw My Boundaries (Culture) -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-emerald-600 via-green-500 to-lime-400 opacity-90">
+                    </div>
+                    <div class="relative p-8 text-white">
+                        <div class="flex items-center mb-4">
+                            <span class="text-5xl mr-4 filter drop-shadow-lg" role="img"
+                                aria-label="Construction Barrier">🚧</span>
+                            <div>
+                                <h3 class="text-2xl font-bold font-serif-expressive">The Boundary Lines</h3>
+                                <p class="text-sm opacity-90 mt-1">Cultural Negotiations</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-20 bg-white/40 rounded mb-4"></div>
+                        <p class="text-base leading-relaxed opacity-95">
+                            My background as a Pastor's Kid (PK) places strong, sometimes contradictory, demands on my
+                            personal life. The biggest tension point is around dating and social freedom. I have my own
+                            personal compass, but navigating family expectations adds a layer of complexity. This part
+                            of my life requires constant negotiation, forcing me to learn how to honor my roots while
+                            asserting my own adult choices.
+                        </p>
+                        <div class="mt-6 flex items-center text-sm font-semibold">
+                            <span class="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Family Values</span>
+                            <span class="ml-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Autonomy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: My Body's Signals and Alarms (Biology) -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-rose-600 via-pink-500 to-fuchsia-500 opacity-90">
+                    </div>
+                    <div class="relative p-8 text-white">
+                        <div class="flex items-center mb-4">
+                            <span class="text-5xl mr-4 filter drop-shadow-lg" role="img"
+                                aria-label="Emergency Siren">🚨</span>
+                            <div>
+                                <h3 class="text-2xl font-bold font-serif-expressive">The Body Speaks</h3>
+                                <p class="text-sm opacity-90 mt-1">Biological Signals</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-20 bg-white/40 rounded mb-4"></div>
+                        <p class="text-base leading-relaxed opacity-95">
+                            My internal sense of feeling "always floating" or detached is a clear physical indicator
+                            that my internal regulation is off. Coupled with irregular sleep and disrupted appetite, my
+                            body is physically signaling chronic academic stress. I've realized that I cannot separate
+                            my mental state from my physical state; fixing the stress is the only way to restore natural
+                            biological rhythms like sleep and hunger.
+                        </p>
+                        <div class="mt-6 flex items-center text-sm font-semibold">
+                            <span class="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Sleep</span>
+                            <span class="ml-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Stress
+                                Response</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Function Over Form (Body Image) -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-indigo-600 via-purple-500 to-pink-500 opacity-90">
+                    </div>
+                    <div class="relative p-8 text-white">
+                        <div class="flex items-center mb-4">
+                            <span class="text-5xl mr-4 filter drop-shadow-lg" role="img"
+                                aria-label="Flexed Bicep">💪</span>
+                            <div>
+                                <h3 class="text-2xl font-bold font-serif-expressive">Strength Over Appearance</h3>
+                                <p class="text-sm opacity-90 mt-1">Body Image Redefined</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-20 bg-white/40 rounded mb-4"></div>
+                        <p class="text-base leading-relaxed opacity-95">
+                            Like many, I focus on specific physical traits I dislike—my thinness, the shape of my nose.
+                            However, I've found a path toward a healthier relationship with my body by focusing on what
+                            it *can* do. My success and effort in sports ground me in the reality of my body's strength
+                            and capability, shifting my valuation from outward appearance to practical functionality.
+                        </p>
+                        <div class="mt-6 flex items-center text-sm font-semibold">
+                            <span class="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Functionality</span>
+                            <span class="ml-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Athletic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7: Navigating Connection and Boundaries (Sexuality) -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-violet-600 via-purple-500 to-fuchsia-500 opacity-90">
+                    </div>
+                    <div class="relative p-8 text-white">
+                        <div class="flex items-center mb-4">
+                            <span class="text-5xl mr-4 filter drop-shadow-lg" role="img"
+                                aria-label="Speech Bubbles">💬</span>
+                            <div>
+                                <h3 class="text-2xl font-bold font-serif-expressive">Connection & Clarity</h3>
+                                <p class="text-sm opacity-90 mt-1">Relational Boundaries</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-20 bg-white/40 rounded mb-4"></div>
+                        <p class="text-base leading-relaxed opacity-95">
+                            Internally, I feel very secure and confident in my preferences and who I am attracted to.
+                            The complexity lies in the external sphere—my "complicated" relationship status and my
+                            difficulty in verbally asserting emotional boundaries. This reveals a need to translate my
+                            internal certainty into effective, clear, and assertive communication skills when engaging
+                            with partners.
+                        </p>
+                        <div class="mt-6 flex items-center text-sm font-semibold">
+                            <span class="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Communication</span>
+                            <span class="ml-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Boundaries</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8: Finding My Anchor (Mental Health) -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="absolute inset-0 bg-gradient-to-br from-slate-700 via-cyan-600 to-teal-500 opacity-90">
+                    </div>
+                    <div class="relative p-8 text-white">
+                        <div class="flex items-center mb-4">
+                            <span class="text-5xl mr-4 filter drop-shadow-lg" role="img" aria-label="Anchor">⚓</span>
+                            <div>
+                                <h3 class="text-2xl font-bold font-serif-expressive">The Anchor Point</h3>
+                                <p class="text-sm opacity-90 mt-1">Mental Health Strategy</p>
+                            </div>
+                        </div>
+                        <div class="h-1 w-20 bg-white/40 rounded mb-4"></div>
+                        <p class="text-base leading-relaxed opacity-95">
+                            My go-to strategy when overwhelmed is avoidance—I use music to escape or simply sleep
+                            through the stress. While this provides temporary relief, it doesn't solve the core problem
+                            (academic load). I recognize that genuine well-being requires a shift toward actively
+                            tackling the source of the stress, replacing passive coping mechanisms with problem-solving
+                            strategies, which is the path to long-term inner stability.
+                        </p>
+                        <div class="mt-6 flex items-center text-sm font-semibold">
+                            <span class="bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Coping</span>
+                            <span class="ml-2 bg-white/20 px-3 py-1 rounded-full backdrop-blur-sm">Growth</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2 class="text-3xl font-serif-expressive font-semibold mt-16 mb-4 text-primary-dark">Reflections on
+                Discovery</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Ultimately, the self I am constructing is not defined by any one module but by the negotiation between
+                all of them. I am a product of my analytical nature, my cultural demands, and my biological responses to
+                stress. This portfolio serves as a commitment: to move from being passively influenced by these factors
+                to actively choosing and designing the *next* iteration of myself.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-primary-dark text-gray-400 py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 The Evolving Self Portfolio | Final Project Submission</p>
+            <p class="mt-2 text-gray-500">A journey in self-analysis and personal growth.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

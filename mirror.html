@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mirror - The Evolving Self</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Font Setup: Inter for body (Sans) and a placeholder serif for headlines */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        .font-sans {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-serif-expressive {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Custom color palette defined for Tailwind */
+        :root {
+            --color-primary-dark: #1E293B;
+            /* Slate-900: Deep Navy/Charcoal */
+            --color-accent-teal: #14B8A6;
+            /* Teal-500: Vibrant Teal for Highlights */
+            --color-bg-light: #F8FAFC;
+            /* Slate-50: Off-White */
+            --color-secondary-grey: #64748B;
+            /* Slate-500 */
+        }
+
+        .bg-primary-dark {
+            background-color: var(--color-primary-dark);
+        }
+
+        .text-accent-teal {
+            color: var(--color-accent-teal);
+        }
+
+        .border-accent-teal {
+            border-color: var(--color-accent-teal);
+        }
+
+        .bg-bg-light {
+            background-color: var(--color-bg-light);
+        }
+
+        /* Mirror reflection animation */
+        @keyframes shimmer {
+            0% {
+                background-position: -1000px 0;
+            }
+
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+
+        .mirror-shine {
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            background-size: 1000px 100%;
+            animation: shimmer 3s infinite;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-dark': '#1E293B',
+                        'accent-teal': '#14B8A6',
+                        'bg-light': '#F8FAFC',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-bg-light font-sans text-primary-dark antialiased">
+
+    <!-- Global Sticky Navigation Bar (Dark, Professional) -->
+    <nav class="sticky top-0 z-50 bg-primary-dark shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo/Title -->
+                <div class="flex-shrink-0">
+                    <a href="index.html"
+                        class="text-2xl font-bold text-white font-serif-expressive tracking-wider hover:text-accent-teal transition duration-200">The
+                        Evolving Self</a>
+                </div>
+                <!-- Nav Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-accent-teal px-3 py-2 rounded-lg text-sm font-medium transition duration-200">Home</a>
+                        <a href="construction.html"
+                            class="text-gray-300 hover:text-accent-teal px-3 py-2 rounded-lg text-sm font-medium transition duration-200">My
+                            Construction</a>
+                        <a href="mirror.html"
+                            class="text-white bg-accent-teal/20 hover:bg-accent-teal/40 px-3 py-2 rounded-lg text-sm font-semibold transition duration-200 border border-accent-teal">The
+                            Mirror</a>
+                        <a href="declarations.html"
+                            class="text-gray-300 hover:text-accent-teal px-3 py-2 rounded-lg text-sm font-medium transition duration-200">My
+                            Declarations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- PAGE 2: The Mirror (Part 2) -->
+        <section class="py-12">
+
+            <!-- Hero Header with Mirror Metaphor -->
+            <div
+                class="relative mb-12 overflow-hidden rounded-3xl bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 p-12 shadow-2xl">
+                <div class="absolute inset-0 mirror-shine"></div>
+                <div class="relative z-10 text-center">
+                    <div class="text-6xl mb-4">🪞</div>
+                    <h1 class="text-5xl font-serif-expressive font-bold text-white mb-4">
+                        The Mirror: Reflections from Others
+                    </h1>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        Understanding the external self—the person others perceive and describe.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Interviewees Section with Enhanced Cards -->
+            <h2 class="text-3xl font-serif-expressive font-semibold mb-8 text-primary-dark text-center">The Voices of
+                Feedback</h2>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <!-- Interviewee Card 1 - Enhanced -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 border-transparent hover:border-accent-teal">
+                    <div
+                        class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400 to-cyan-500 opacity-20 rounded-bl-full">
+                    </div>
+                    <div class="relative p-8">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-4xl shadow-lg">
+                                🤝
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-2xl font-bold text-primary-dark font-serif-expressive">Interviewee A
+                                </h3>
+                                <p class="text-accent-teal font-semibold">Childhood Friend</p>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <span class="text-accent-teal mr-2">👁️</span>
+                                <p class="text-gray-700"><span class="font-semibold">Perspective:</span> Long-term view
+                                </p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-accent-teal mr-2">🔍</span>
+                                <p class="text-gray-700"><span class="font-semibold">Insight:</span> Sees both public
+                                    and private self</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-accent-teal mr-2">⏱️</span>
+                                <p class="text-gray-700"><span class="font-semibold">Duration:</span> Years of
+                                    observation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interviewee Card 2 - Enhanced -->
+                <div
+                    class="group relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-2 border-transparent hover:border-accent-teal">
+                    <div
+                        class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-400 to-pink-500 opacity-20 rounded-bl-full">
+                    </div>
+                    <div class="relative p-8">
+                        <div class="flex items-center mb-6">
+                            <div
+                                class="w-20 h-20 rounded-full bg-gradient-to-br from-purple-500 to-pink-400 flex items-center justify-center text-4xl shadow-lg">
+                                🧑‍🏫
+                            </div>
+                            <div class="ml-6">
+                                <h3 class="text-2xl font-bold text-primary-dark font-serif-expressive">Interviewee B
+                                </h3>
+                                <p class="text-accent-teal font-semibold">College Peer</p>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <span class="text-accent-teal mr-2">👁️</span>
+                                <p class="text-gray-700"><span class="font-semibold">Perspective:</span> Current
+                                    academic view</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-accent-teal mr-2">🔍</span>
+                                <p class="text-gray-700"><span class="font-semibold">Insight:</span> Primarily sees
+                                    public self</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-accent-teal mr-2">⏱️</span>
+                                <p class="text-gray-700"><span class="font-semibold">Duration:</span> Recent
+                                    interactions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Section with Visual Enhancement -->
+            <div class="mb-16">
+                <div class="flex items-center justify-center mb-8">
+                    <div class="h-px bg-gradient-to-r from-transparent via-accent-teal to-transparent w-full max-w-md">
+                    </div>
+                    <h2 class="text-3xl font-serif-expressive font-semibold text-primary-dark px-6 whitespace-nowrap">
+                        Their Impressions</h2>
+                    <div class="h-px bg-gradient-to-r from-transparent via-accent-teal to-transparent w-full max-w-md">
+                    </div>
+                </div>
+
+                <!-- Enhanced Summary Block with Gradient Border -->
+                <div
+                    class="relative p-1 rounded-2xl bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 shadow-2xl">
+                    <div class="bg-primary-dark rounded-2xl p-10">
+                        <div
+                            class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-accent-teal text-white px-6 py-2 rounded-full font-semibold shadow-lg">
+                            ~300 Word Summary
+                        </div>
+                        <div class="mt-4 text-white leading-relaxed text-lg space-y-4">
+                            <p>
+                                When I looked back at the feedback from my two interviewees—my childhood friend (A) and
+                                my college
+                                peer (B)—I realized just how big the gap is between the version of me people see and the
+                                version of
+                                me I actually live with.
+                            </p>
+                            <p>
+                                My childhood friend, who basically watched me grow into the person I am now, described
+                                me as
+                                <span class="text-accent-teal font-bold">loyal</span>,
+                                <span class="text-accent-teal font-bold">very analytical</span>, and honestly, sometimes
+                                <span class="text-accent-teal font-bold">too quiet about what's bothering me</span>.
+                                They
+                                said they've
+                                always seen how driven I am, but they also know that a lot of that drive comes from my
+                                anxiety.
+                                They've seen the moments where I look calm on the outside, but inside I'm stressing out
+                                or scared of
+                                failing. To them, I'm like someone who always performs well, but is constantly fighting
+                                a silent
+                                battle behind the scenes.
+                            </p>
+                            <p>
+                                Meanwhile, my college peer gave a completely different picture. Their view was focused
+                                mainly on my
+                                <span class="text-accent-teal font-bold">Public Self</span>—the side of me I let people
+                                see. They described me as <span class="text-accent-teal font-bold">reserved, reliable,
+                                    organized, and a great planner</span>. They saw the results of my coping mechanisms,
+                                but not the
+                                struggle
+                                behind them. For example, they mentioned how I always manage to get things done on time,
+                                without
+                                knowing
+                                that I sometimes lose sleep the night before because of stress.
+                            </p>
+                            <p>
+                                But there was one word both of them used: <span
+                                    class="text-accent-teal font-bold">dedicated</span>. They both recognize how much
+                                effort I
+                                put into my relationships, my studies, and the projects I take on. Their feedback showed
+                                me that,
+                                yes, I
+                                do a good job of looking put-together—but I also hide a lot of what I really feel.
+                            </p>
+                            <p>
+                                And that's the part that hit me: the version of me people see is just the "functional"
+                                version. The
+                                real me—the one who overthinks, worries, and gets overwhelmed—doesn't show up as often.
+                                This really
+                                confirmed my belief that I need to slowly close the gap between those two sides of
+                                myself, so that
+                                the people around me can understand me more fully, not just the part of me that looks
+                                strong and
+                                organized on the outside.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Themes Visualization -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-serif-expressive font-semibold text-primary-dark mb-6 text-center">Key Themes
+                    Identified</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div
+                        class="bg-gradient-to-br from-blue-500 to-cyan-400 p-6 rounded-xl text-white text-center shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-3xl mb-2">🎯</div>
+                        <p class="font-bold">Loyal</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-purple-500 to-pink-400 p-6 rounded-xl text-white text-center shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-3xl mb-2">🧠</div>
+                        <p class="font-bold">Analytical</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-emerald-500 to-teal-400 p-6 rounded-xl text-white text-center shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-3xl mb-2">📋</div>
+                        <p class="font-bold">Organized</p>
+                    </div>
+                    <div
+                        class="bg-gradient-to-br from-amber-500 to-orange-400 p-6 rounded-xl text-white text-center shadow-lg transform hover:scale-105 transition duration-300">
+                        <div class="text-3xl mb-2">💪</div>
+                        <p class="font-bold">Dedicated</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Reflection with Enhanced Design -->
+            <div class="relative">
+                <div class="flex items-center justify-center mb-8">
+                    <div class="h-px bg-gradient-to-r from-transparent via-accent-teal to-transparent w-full max-w-md">
+                    </div>
+                    <h2 class="text-3xl font-serif-expressive font-semibold text-primary-dark px-6 whitespace-nowrap">My
+                        Reflection</h2>
+                    <div class="h-px bg-gradient-to-r from-transparent via-accent-teal to-transparent w-full max-w-md">
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-xl p-10 border-l-8 border-accent-teal">
+                    <div class="flex items-start mb-6">
+                        <div class="text-5xl mr-6 opacity-20">💭</div>
+                        <div>
+                            <h3 class="text-2xl font-serif-expressive font-bold text-primary-dark mb-4">Bridging the Gap
+                            </h3>
+                            <p class="text-lg text-gray-700 leading-relaxed">
+                                Hearing how differently people see me made me realize how much of myself I keep tucked
+                                away. My childhood friend sees the real, messy, anxious parts of me—the parts I try to
+                                hide—while my college peer mostly sees the organized, reliable version I show in public.
+                                Both views are true, but only one feels honest. The one thing they both noticed, though,
+                                is my dedication, and that reminded me that despite my inner struggles, I genuinely give
+                                my best to the people and things I care about. This whole experience made me aware of
+                                how wide the gap is between my inner and outer self, and it pushes me to start being
+                                more open about what I feel, not just what I accomplish.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="bg-primary-dark text-gray-400 py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 The Evolving Self Portfolio | Final Project Submission</p>
+            <p class="mt-2 text-gray-500">A journey in self-analysis and personal growth.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
